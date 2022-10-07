@@ -9,4 +9,9 @@ const renderer = (data) => {
     .then((result) => result.css);
 };
 
+hexo.extend.helper.register('basePath', (path) => {
+  const isDev = hexo.env.cmd === 'server'
+  return isDev ? `/${path}` : hexo.theme.config.basePath + path
+})
+
 hexo.extend.renderer.register("css", "css", renderer);

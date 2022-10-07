@@ -1,0 +1,3 @@
+
+# 部署路径，需以/结尾。当URL为http://site.com时，basePath为/，当URL为http://site.com/blog时，basePath为/blog/
+basePath: '/hexo-blog/'
