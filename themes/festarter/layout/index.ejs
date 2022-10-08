@@ -1,20 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>首页 - <%- config.title %></title>
-  <link rel="stylesheet" href="<%= basePath('tailwind.css') %>">
-</head>
-<body>
-  <% page.posts.data.forEach(post => { %>
-    <li class="text-red-500">
-      <h1 class="text-slate-900 text-lg"><%= post.title %></h1>
-      <div>
-        <%- post.content.substr(0, 140) %>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>首页 - <%- config.title %></title>
+    <link rel="stylesheet" href="<%= basePath('tailwind.css') %>" />
+  </head>
+  <body>
+    <header class="bg-slate-100">
+      <div class="mx-auto flex h-14 max-w-[920px] justify-between px-4 md:px-0">
+        <div class="flex items-center">
+          <h2
+            class="cursor-pointer rounded-sm text-xl font-semibold leading-none text-slate-700 hover:text-slate-900"
+          >
+            绝弹笔记
+          </h2>
+        </div>
+        <div class="md:flex items-center gap-1 text-sm text-slate-500 hidden">
+          <div
+            class="cursor-pointer rounded-sm px-3 py-1 hover:text-slate-700"
+          >
+            首页
+          </div>
+          <div
+            class="cursor-pointer rounded-sm px-3 py-1 hover:text-slate-700"
+          >
+            分类
+          </div>
+          <div
+            class="cursor-pointer rounded-sm px-3 py-1 hover:text-slate-700"
+          >
+            归档
+          </div>
+          <div
+            class="cursor-pointer rounded-sm px-3 py-1 hover:text-slate-700"
+          >
+            关于
+          </div>
+        </div>
       </div>
-    </li>
-  <% }) %>
-</body>
+    </header>
+    <main class="mx-auto mt-8 max-w-[920px] px-4 md:px-0 leading-7">
+      <div>
+        <article class="mt-4 border-b border-neutral-100 pb-4">
+          <header
+            class="cursor-pointer text-lg font-semibold text-slate-700 hover:text-slate-900 hover:underline hover:underline-offset-4"
+          >
+            Git子模块的简单使用
+          </header>
+          <section class="mt-2 text-sm text-slate-500 leading-6">
+            子模块概述git子模块为git主项目下 独立 出来的 git仓库 ，可 单独
+            的进行代码的修改、提交、更新等操作。 子模块使用 添加子模块 1$ git
+            submodule add &lt;url&gt; url 为子模块git仓库地址，我们只需要进入
+            主项目 的根目录或者 指定 目录 下，执行此...
+          </section>
+          <footer>
+            <span class="mt-2 text-xs text-slate-400"># 2022-09-22</span>
+          </footer>
+        </article>
+        <article class="mt-4 border-b border-neutral-100 pb-4">
+          <header
+            class="cursor-pointer text-lg font-bold text-slate-700 hover:text-slate-900 hover:underline hover:underline-offset-4"
+          >
+            Git子模块的简单使用
+          </header>
+          <section class="mt-1 text-sm text-slate-500">
+            子模块概述git子模块为git主项目下 独立 出来的 git仓库 ，可 单独
+            的进行代码的修改、提交、更新等操作。 子模块使用 添加子模块 1$ git
+            submodule add &lt;url&gt; url 为子模块git仓库地址，我们只需要进入
+            主项目 的根目录或者 指定 目录 下，执行此...
+          </section>
+          <footer>
+            <span class="mt-1 text-xs text-slate-400"># 2022-09-22</span>
+          </footer>
+        </article>
+        <article class="mt-4 border-b border-neutral-100 pb-4">
+          <header
+            class="cursor-pointer text-lg font-bold text-slate-700 hover:text-slate-900 hover:underline hover:underline-offset-4"
+          >
+            Git子模块的简单使用
+          </header>
+          <section class="mt-1 text-sm text-slate-500">
+            子模块概述git子模块为git主项目下 独立 出来的 git仓库 ，可 单独
+            的进行代码的修改、提交、更新等操作。 子模块使用 添加子模块 1$ git
+            submodule add &lt;url&gt; url 为子模块git仓库地址，我们只需要进入
+            主项目 的根目录或者 指定 目录 下，执行此...
+          </section>
+          <footer>
+            <span class="mt-1 text-xs text-slate-400"># 2022-09-22</span>
+          </footer>
+        </article>
+        <article class="mt-4 border-b border-neutral-100 pb-4">
+          <header
+            class="cursor-pointer text-lg font-bold text-slate-700 hover:text-slate-900 hover:underline hover:underline-offset-4"
+          >
+            Git子模块的简单使用
+          </header>
+          <section class="mt-1 text-sm text-slate-500">
+            子模块概述git子模块为git主项目下 独立 出来的 git仓库 ，可 单独
+            的进行代码的修改、提交、更新等操作。 子模块使用 添加子模块 1$ git
+            submodule add &lt;url&gt; url 为子模块git仓库地址，我们只需要进入
+            主项目 的根目录或者 指定 目录 下，执行此...
+          </section>
+          <footer>
+            <span class="mt-1 text-xs text-slate-400"># 2022-09-22</span>
+          </footer>
+        </article>
+        <article class="mt-4 border-b border-neutral-100 pb-4">
+          <header
+            class="cursor-pointer text-lg font-bold text-slate-700 hover:text-slate-900 hover:underline hover:underline-offset-4"
+          >
+            Git子模块的简单使用
+          </header>
+          <section class="mt-1 text-sm text-slate-500">
+            子模块概述git子模块为git主项目下 独立 出来的 git仓库 ，可 单独
+            的进行代码的修改、提交、更新等操作。 子模块使用 添加子模块 1$ git
+            submodule add &lt;url&gt; url 为子模块git仓库地址，我们只需要进入
+            主项目 的根目录或者 指定 目录 下，执行此...
+          </section>
+          <footer>
+            <span class="mt-1 text-xs text-slate-400"># 2022-09-22</span>
+          </footer>
+        </article>
+        <article class="mt-4 border-b border-neutral-100 pb-4">
+          <header
+            class="cursor-pointer text-lg font-bold text-slate-700 hover:text-slate-900 hover:underline hover:underline-offset-4"
+          >
+            Git子模块的简单使用
+          </header>
+          <section class="mt-1 text-sm text-slate-500">
+            子模块概述git子模块为git主项目下 独立 出来的 git仓库 ，可 单独
+            的进行代码的修改、提交、更新等操作。 子模块使用 添加子模块 1$ git
+            submodule add &lt;url&gt; url 为子模块git仓库地址，我们只需要进入
+            主项目 的根目录或者 指定 目录 下，执行此...
+          </section>
+          <footer>
+            <span class="mt-1 text-xs text-slate-400"># 2022-09-22</span>
+          </footer>
+        </article>
+        <article class="mt-4 border-b border-neutral-100 pb-4">
+          <header
+            class="cursor-pointer text-lg font-bold text-slate-700 hover:text-slate-900 hover:underline hover:underline-offset-4"
+          >
+            Git子模块的简单使用
+          </header>
+          <section class="mt-1 text-sm text-slate-500">
+            子模块概述git子模块为git主项目下 独立 出来的 git仓库 ，可 单独
+            的进行代码的修改、提交、更新等操作。 子模块使用 添加子模块 1$ git
+            submodule add &lt;url&gt; url 为子模块git仓库地址，我们只需要进入
+            主项目 的根目录或者 指定 目录 下，执行此...
+          </section>
+          <footer>
+            <span class="mt-1 text-xs text-slate-400"># 2022-09-22</span>
+          </footer>
+        </article>
+        <article class="mt-4 border-b border-neutral-100 pb-4">
+          <header
+            class="cursor-pointer text-lg font-bold text-slate-700 hover:text-slate-900 hover:underline hover:underline-offset-4"
+          >
+            Git子模块的简单使用
+          </header>
+          <section class="mt-1 text-sm text-slate-500">
+            子模块概述git子模块为git主项目下 独立 出来的 git仓库 ，可 单独
+            的进行代码的修改、提交、更新等操作。 子模块使用 添加子模块 1$ git
+            submodule add &lt;url&gt; url 为子模块git仓库地址，我们只需要进入
+            主项目 的根目录或者 指定 目录 下，执行此...
+          </section>
+          <footer>
+            <span class="mt-1 text-xs text-slate-400"># 2022-09-22</span>
+          </footer>
+        </article>
+        <article class="mt-4 border-b border-neutral-100 pb-4">
+          <header
+            class="cursor-pointer text-lg font-bold text-slate-700 hover:text-slate-900 hover:underline hover:underline-offset-4"
+          >
+            Git子模块的简单使用
+          </header>
+          <section class="mt-1 text-sm text-slate-500">
+            子模块概述git子模块为git主项目下 独立 出来的 git仓库 ，可 单独
+            的进行代码的修改、提交、更新等操作。 子模块使用 添加子模块 1$ git
+            submodule add &lt;url&gt; url 为子模块git仓库地址，我们只需要进入
+            主项目 的根目录或者 指定 目录 下，执行此...
+          </section>
+          <footer>
+            <span class="mt-1 text-xs text-slate-400"># 2022-09-22</span>
+          </footer>
+        </article>
+        <article class="mt-4 border-b border-neutral-100 pb-4">
+          <header
+            class="cursor-pointer text-lg font-bold text-slate-700 hover:text-slate-900 hover:underline hover:underline-offset-4"
+          >
+            Git子模块的简单使用
+          </header>
+          <section class="mt-1 text-sm text-slate-500">
+            子模块概述git子模块为git主项目下 独立 出来的 git仓库 ，可 单独
+            的进行代码的修改、提交、更新等操作。 子模块使用 添加子模块 1$ git
+            submodule add &lt;url&gt; url 为子模块git仓库地址，我们只需要进入
+            主项目 的根目录或者 指定 目录 下，执行此...
+          </section>
+          <footer class="space-x-1">
+            <span
+              class="mt-1 text-xs text-slate-400 hover:text-slate-700 hover:underline hover:underline-offset-2 cursor-pointer"
+              ># 2022-09-22</span
+            >
+            <span
+              class="mt-1 text-xs text-slate-400 hover:text-slate-700 hover:underline hover:underline-offset-2 cursor-pointer"
+              ># 前端开发</span
+            >
+            <span
+              class="mt-1 text-xs text-slate-400 hover:text-slate-700 hover:underline hover:underline-offset-2 cursor-pointer"
+              ># 日常</span
+            >
+          </footer>
+        </article>
+      </div>
+      <footer class="mt-4 text-center">
+        <button
+          class="text-sm text-slate-400 border border-neutral-100 px-2 py-0.5"
+        >
+          上一页
+        </button>
+        <button
+          class="text-sm text-slate-700 border bg-slate-300 border-neutral-100 px-2 py-0.5"
+        >
+          1
+        </button>
+        <button
+          class="text-sm text-slate-400 border border-neutral-100 px-2 py-0.5 rounded-sm"
+        >
+          下一页
+        </button>
+      </footer>
+    </main>
+
+    <footer
+      class="mt-4 text-sm text-slate-500 text-center pb-4 pt-4 bg-slate-100"
+    >
+      <div class="max-w-[920px] mx-auto">
+        <p>Copyright &copy; 绝弹 2022</p>
+        <p class="mt-1">Powered by Hexo & Juetan Theme</p>
+      </div>
+    </footer>
+  </body>
 </html>
